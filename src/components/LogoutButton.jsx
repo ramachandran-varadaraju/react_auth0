@@ -8,7 +8,7 @@ function LogoutButton() {
     <div>
       <button
         onClick={() => {
-          auth0Ctx.logout();
+          auth0Ctx.logout({ returnTo: window.location.origin });
         }}
       >
         Logout
